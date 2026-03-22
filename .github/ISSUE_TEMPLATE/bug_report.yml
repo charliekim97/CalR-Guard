@@ -1,0 +1,64 @@
+name: Bug report
+description: Report a reproducible problem in CalR Guard
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form when the tool behaves incorrectly on a real file or config.
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      placeholder: One sentence description of the problem
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - File import
+        - Column mapping
+        - Validation checks
+        - QC flagging
+        - Suggested exclusions
+        - Metadata merge
+        - Bundle export
+        - Local app
+        - CLI
+        - Documentation
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Run ...
+        2. Upload ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: files
+    attributes:
+      label: Relevant files or snippets
+      description: Remove any sensitive or identifying lab information before posting.
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      placeholder: e.g. 0.3.1

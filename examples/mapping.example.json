@@ -1,0 +1,12 @@
+{
+  "global": {
+    "timestamp": "Datetime",
+    "subject": "Subject",
+    "vo2": "VO2(3)",
+    "vco2": "VCO2(3)",
+    "rer": "RER",
+    "feed": "Feed",
+    "drink": "Drink",
+    "ee": "EE"
+  }
+}

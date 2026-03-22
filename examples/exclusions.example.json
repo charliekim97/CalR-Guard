@@ -1,0 +1,9 @@
+[
+  {
+    "subject_id": "Mouse_01",
+    "variable": "feed",
+    "start_hour": 0.5,
+    "end_hour": 0.5,
+    "reason": "Demo feeder artifact"
+  }
+]

@@ -1,0 +1,30 @@
+name: Feature request
+description: Suggest an improvement to the front-end validation or curation workflow
+labels: [enhancement]
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      placeholder: One sentence description of the requested feature
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Current workflow problem
+      placeholder: What friction or failure point does this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      placeholder: Describe the desired behavior as concretely as possible.
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Example files or edge cases
+      description: Mention vendor family, export style, and any tricky cases.

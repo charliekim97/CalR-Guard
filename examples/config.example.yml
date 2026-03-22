@@ -1,0 +1,36 @@
+project_metadata:
+  project_title: Demo calorimetry pilot
+  investigator: Jane Doe
+  system: TSE PhenoMaster
+  species: Mouse
+  strain: C57BL/6J
+  sex: Male
+  diet_kcal_per_g: 3.56
+  light_start_zt: 0
+  light_end_zt: 12
+  ambient_temperature_c: 22
+  acclimation_hours: 24
+  treatment: Vehicle vs T3
+  notes: Example config for CalR Guard.
+
+mapping_overrides:
+  global:
+    timestamp: Datetime
+    subject: Subject
+    vo2: VO2(3)
+    vco2: VCO2(3)
+    rer: RER
+    feed: Feed
+    drink: Drink
+    ee: EE
+
+exclusions:
+  - subject_id: Mouse_01
+    variable: feed
+    start_hour: 0.5
+    end_hour: 0.5
+    reason: Demo feeder artifact
+
+subject_sheet: examples/subject_sheet.example.csv
+
+qc_multiplier: 6.0
